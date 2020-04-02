@@ -24,7 +24,7 @@ Incorporate the face detection solution you done in the [Assignment 1](https://g
 ### Face tracking (Points 50)
 Incorporate the optical flow field solution you done in the [Assignment 2](https://github.com/Jacobs-University/visir-tracker-02) into the framework in the following way:
 1. Your sparse optical flow shoud return a vector of 2-d points: `std::vector<Point2f>`
-2. Implment function `CMarker::markVecOFF()` and use it for drawing the optical flow field (feel free to mify its arguments if needed). 
+2. Implment function `CMarker::markVecOFF()` and use it for drawing the optical flow field (feel free to modify its arguments if needed). 
 3. Now detect the points only in the _face area_ , whic is described in `vpFaces` variable.
 4. Update the detected points every 10th frame (when face detection is used).
 5. Track also the points added with mouse in the mouse callback function.
