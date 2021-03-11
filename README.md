@@ -1,6 +1,8 @@
 # Practical Assignment 3
-Please put your name (or names if you work in a group) here:  
-**Name**: .......
+**Dealine**: 26.03.2021
+
+Please put your name here:  
+**Name:** .......
 ## Problem 3.1
 ### Ring Buffer (Points 30)
 1. Fork the current repository
@@ -34,3 +36,11 @@ Incorporate the optical flow field solution you done in the [Assignment 2](https
 ### Graphical User Interface (GUI) (Bonus Points 20)
 1. Modify the function `CMarker::markGUI()` and design your own gui. Be creative!
 2. Implement showing the current FPS in GUI
+
+## Submission
+Please submit the assignment by making a pull request.
+**Important** : Please make sure that
+- No _extra files_ are submitted (except those, which were mentioned in the assignment)
+- The changes were made _only_ in those files where you were asked to write your code
+- The Continiouse Integration system (appVeyor) can build the submitted code
+- The rendered images are also submitted in the folder "renders" 
