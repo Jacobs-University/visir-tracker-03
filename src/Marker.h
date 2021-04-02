@@ -5,16 +5,15 @@
 
 class CMarker {
 public:
-	// draws faces into the image
-	static void markFaces(Mat& img, const std::vector<ptr_face_t>& vFaces);
-	
-	// draws the points (e.g. from GoodFeaturesToTrack) into the image
-	static void markPoints(Mat& img, const std::vector<Point2f>& vPoints, Scalar color = CV_RGB(255, 165, 0));
-	
-	// draws vectors of the vector Optical Flow Field () into the image
-	static void markVecOFF(Mat& img, const Mat& hFlow, const Mat& vFlow);
-	
-	// draws GUI
-	static void markGUI(Mat& img);
+    // draws faces into the image
+    static void markFaces(Mat& img, const std::vector<ptr_face_t>& vFaces);
+    
+    // draws the points (e.g. from GoodFeaturesToTrack) into the image
+    static void markPoints(Mat& img, const std::vector<Point2f>& vPoints, Scalar color = CV_RGB(255, 165, 0));
+    
+    // draws vectors of the vector Optical Flow Field () into the image
+    static void markVecOFF(Mat& img, Mat& mask, const std::vector<std::tuple<Point2f, Point2f>>& flowPoints);
+    
+    // draws GUI
+    static void markGUI(Mat& img);
 };
-
