@@ -3,10 +3,7 @@
 void CMarker::markFaces(Mat& img, const std::vector<ptr_face_t>& vFaces)
 {
 	for (auto face : vFaces) {
-		// ------ PUT YOUR CODE HERE -------
-		// 1. Draw all faces using face->getArea();
-		// 2. Print the text using face->getText();
-		// 3. Print face id using face->getId();
+		rectangle(img, face->getArea(), CV_RGB(0, 255, 0));
 	}
 }
 
@@ -16,9 +13,13 @@ void CMarker::markPoints(Mat& img, const std::vector<Point2f>& vPoints, Scalar c
 		circle(img, point, 3, color, 2);
 }
 
-void CMarker::markVecOFF(Mat& img, const Mat& hFlow, const Mat& vFlow)
+void CMarker::markVecOFF(Mat& mask, const std::vector<Point2f>& prev, const std::vector<Point2f>& curr, const std::vector<uchar> status)
 {
-	// ------ PUT YOUR CODE HERE -------
+	for (uint i = 0; i < prev.size(); i++) {
+		if (status[i] == 1) {
+			line(mask, prev[i], curr[i], Scalar(255,0,0), 2);
+		}
+	}
 }
 
 void CMarker::markGUI(Mat& img)

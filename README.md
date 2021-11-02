@@ -2,7 +2,15 @@
 **Dealine**: 02.11.2021
 
 Please put your name here:  
-**Name:** .......
+**Name:** Hannes Diethelm
+
+**Changes:** 
+
+1) Directory "data" with xml cascade file was added.
+2) Line 16 in "CMakeLists.txt" resulted in linker error during make. Line 17 was added as a hotfix.
+3) Macos ".DS_Store" files were gitignored.
+4) Solutions to problems 3.1, 3.2, 3.3 and 3.4 were added in the "src" directory.
+
 ## Problem 3.1
 ### Ring Buffer (Points 30)
 1. Fork the current repository
